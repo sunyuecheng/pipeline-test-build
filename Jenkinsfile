@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    PACKAGE_REPO_DIR=''
+    PACKAGE_REPO_DIR='/home/cloud/package'
     REMOTE_HOST_IP='49.4.115.176'
     REMOTE_HOST_USER='root'
     REMOTE_HOST_PWD='KINGking_123'
