@@ -1,11 +1,11 @@
 pipeline {
   agent any
   environment {
-    PACKAGE_REPO_DIR='/home/cloud/package'
-    REMOTE_HOST_IP='192.168.1.77'
+    PACKAGE_REPO_DIR=''
+    REMOTE_HOST_IP='192.168.37.134'
     REMOTE_HOST_USER='root'
-    REMOTE_HOST_PWD='KINGking_123'
-    JENKINS_BIND_IP='192.168.1.77'
+    REMOTE_HOST_PWD='123456'
+    JENKINS_BIND_IP='192.168.37.134'
     JENKINS_PORT='8081'
   }
 
@@ -29,7 +29,7 @@ pipeline {
           }
         }
 
-        stage('install help') {
+        stage('install helm') {
           steps {
             sh '''cd ./install/helm-install; \\
                   echo "PACKAGE_REPO_DIR=${PACKAGE_REPO_DIR}" >> config.properties; \\
