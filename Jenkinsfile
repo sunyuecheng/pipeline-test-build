@@ -2,10 +2,10 @@ pipeline {
   agent any
   environment {
     PACKAGE_REPO_DIR='/home/cloud/package'
-    REMOTE_HOST_IP='49.4.115.176'
+    REMOTE_HOST_IP='192.168.1.77'
     REMOTE_HOST_USER='root'
     REMOTE_HOST_PWD='KINGking_123'
-    JENKINS_BIND_IP='192.168.1.112'
+    JENKINS_BIND_IP='192.168.1.77'
     JENKINS_PORT='8081'
   }
 
